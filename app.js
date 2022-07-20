@@ -12,7 +12,7 @@ const contactContent = "Give us your reviews so that we can improve our product.
 
 const app = express();
 const url="mongodb+srv://rachu141:amsterdam@cluster0.jnefo.mongodb.net/blogDB";
-let port=process.env.PORT || 3000;
+var port=process.env.PORT || 3000;
 
 mongoose.connect(url,{useUnifiedtopology:true}).then(function(ans){
   console.log("Connected Successfully to the server");
