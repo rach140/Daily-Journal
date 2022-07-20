@@ -12,6 +12,7 @@ const contactContent = "Give us your reviews so that we can improve our product.
 
 const app = express();
 const url="mongodb+srv://rachu141:amsterdam@cluster0.jnefo.mongodb.net/blogDB";
+let port=process.env.PORT || 3000;
 
 mongoose.connect(url,{useUnifiedtopology:true}).then(function(ans){
   console.log("Connected Successfully to the server");
@@ -88,6 +89,6 @@ Post.find({},function(err,docs){
 
 
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });
