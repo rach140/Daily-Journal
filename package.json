@@ -1,5 +1,5 @@
 {
-  "name": "Daily Journal",
+  "name": "Daily-Journal",
   "version": "1.0.0",
   "description": "This is a project on the topic node development.This is a journal website.",
   "main": "app.js",
